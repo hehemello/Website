@@ -1,3 +1,6 @@
+<!DOCTYPE HTML>
+<HTML>
+<title>Minecraft</title>  
 <script src="css/ExtraScreen.css"></script>
 <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
 <script src="Script Files/Minecraft.js"></script>
@@ -8,6 +11,29 @@
 <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/intersection-spawn.js"></script>
 
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBlAD8kT95JapB-43rV0jgzNTYNdMmXlCU",
+    authDomain: "minecraft-mutliplayer-website.firebaseapp.com",
+    projectId: "minecraft-mutliplayer-website",
+    storageBucket: "minecraft-mutliplayer-website.appspot.com",
+    messagingSenderId: "906413059734",
+    appId: "1:906413059734:web:9aaec8fea91eb6b8009cb7",
+    measurementId: "G-QX7KE77HRM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <button>Return Coler</button>
   <a-scene>
       <a-asset>
@@ -39,3 +65,4 @@
       <a-entity mixin="voxel" position="1 0 -2"></a-entity>
   </a-scene>
 </body>
+  </html>
