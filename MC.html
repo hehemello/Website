@@ -38,17 +38,19 @@
   <button>Return Coler</button>
   <a-scene>
       <a-asset>
+        <img id="blockTexture" crossorigin="anonymous" src="art.gif">
         <img id="groundTexture" crossorigin="anonymous" src="Background.png">
         <img id="skyTexture" crossorigin="anonymous" src="Background.png">
         <a-mixin id="voxel"
                 geometry="primitive: box; height: 0.5; width: 0.5; depth: 0.5"
                 material="shader: standard"
-                random-color
+                sign in icon.png
                 snap="offset: 0.25 0.25 0.25; snap: 0.5 0.5 0.5"></a-mixin>
       </a-asset>
 
       <a-sky id="sky" src="#skyTexture" radius="32" theta-length="90"></a-sky>
-
+    
+<a-block id="block" src="#blockTexture" radius="32" theta-length="90"></a-sky>
       <a-cylinder id="ground" src="#groundTexture" radius="32" height="0.1"></a-cylinder>
 
       <a-entity id="teleHand" hand-controls="left" teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"></a-entity>
