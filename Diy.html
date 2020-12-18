@@ -31,8 +31,8 @@
         cycleup:1000,
         cycledown:1000
     }).ready(function (fs, main) {
-      fs.extract("archic.zip").then(function () {
-        main(["DEICE.EXE"]).then(function (ci) {
+      fs.extract("Archive (1).zip").then(function () {
+        main(["ALVR-setup-2.4.0-alpha5.exe"]).then(function (ci) {
             window.ci = ci;
             ci.simulateKeyPress(67);
             ci.simulateKeyPress(13);
