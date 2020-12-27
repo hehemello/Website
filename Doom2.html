@@ -60,10 +60,10 @@
 
          animate();
 
-         async function runDoom() {
+         async function runDeice() {
              stop();
 
-             const bundle = await emulatorsUi.network.resolveBundle("doom.zip");
+             const bundle = await emulatorsUi.network.resolveBundle("doom2.zip");
              const ciPromise = emulators.dosWorker(bundle);
              ciPromise.then((ci) => {
                  emulatorsUi.sound.audioNode(ci);
